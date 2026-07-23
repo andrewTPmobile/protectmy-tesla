@@ -5,14 +5,24 @@ import { ArrowRight } from 'lucide-react'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-charcoal text-white overflow-hidden flex items-center">
+    <section
+      className="relative min-h-screen text-white overflow-hidden flex items-center bg-cover bg-center"
+      style={{
+        backgroundImage: 'url(/hero-bg.gif)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/50" />
+
       {/* Background gradient effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-tesla-red/20 to-charcoal/0" />
 
       {/* Background image overlay */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_20%_50%,rgba(232,33,39,0.1),transparent_50%)]" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 items-center">
         {/* Left Content */}
         <div className="animate-fade-in-up">
           <div className="inline-block mb-4 px-3 py-1 bg-tesla-red/20 rounded-full border border-tesla-red/50">
@@ -54,17 +64,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right Visual */}
-        <div className="relative h-96 md:h-screen flex items-center justify-center">
-          <div
-            className="relative w-full h-full rounded-3xl overflow-hidden bg-cover bg-center"
-            style={{
-              backgroundImage: 'url(/hero-bg.gif)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
-        </div>
       </div>
 
       {/* Scroll indicator */}
