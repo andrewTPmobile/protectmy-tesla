@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/book",
+      "regex": "^/book(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/book(?:/)?$"
+    },
+    {
+      "page": "/find-installer",
+      "regex": "^/find\\-installer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/find\\-installer(?:/)?$"
+    },
+    {
+      "page": "/services/ceramic-coating",
+      "regex": "^/services/ceramic\\-coating(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/ceramic\\-coating(?:/)?$"
+    },
+    {
+      "page": "/services/paint-protection-film",
+      "regex": "^/services/paint\\-protection\\-film(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/paint\\-protection\\-film(?:/)?$"
+    },
+    {
+      "page": "/services/vehicle-wraps",
+      "regex": "^/services/vehicle\\-wraps(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/vehicle\\-wraps(?:/)?$"
+    },
+    {
+      "page": "/services/window-tint",
+      "regex": "^/services/window\\-tint(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/window\\-tint(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
