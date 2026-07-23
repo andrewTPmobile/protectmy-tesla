@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
@@ -21,10 +22,13 @@ export default function Navigation() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-tesla-red rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-lg">T</span>
-          </div>
-          <span className="font-bold text-xl text-charcoal hidden sm:inline">Protect My Tesla</span>
+          <Image
+            src="/logos/logo-black.png"
+            alt="Protect My Tesla"
+            width={120}
+            height={40}
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}

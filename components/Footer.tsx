@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Mail, MapPin, Phone, Clock, Facebook, Instagram, Youtube } from 'lucide-react'
 
 export default function Footer() {
@@ -8,12 +9,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-tesla-red rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">T</span>
-              </div>
-              <span className="font-bold text-lg">Protect My Tesla</span>
-            </div>
+            <Image
+              src="/logos/logo-light.png"
+              alt="Protect My Tesla"
+              width={150}
+              height={50}
+              className="h-12 w-auto mb-4"
+            />
             <p className="text-gray-400 text-sm">Premium protection services for your Tesla vehicle.</p>
           </div>
 
