@@ -56,15 +56,14 @@ export default function HeroSection() {
 
         {/* Right Visual */}
         <div className="relative h-96 md:h-screen flex items-center justify-center">
-          {/* Animated Tesla shape */}
-          <div className="absolute w-72 h-64 bg-gradient-to-br from-tesla-red to-tesla-red/30 rounded-3xl opacity-20 blur-3xl animate-pulse" />
-
-          <div className="relative w-full h-full bg-gradient-to-br from-gray-800 to-black rounded-3xl overflow-hidden flex items-center justify-center">
-            <div className="text-center text-gray-600">
-              <p className="text-lg">Professional Tesla Protection</p>
-              <p className="text-sm mt-2">High-quality imagery coming soon</p>
-            </div>
-          </div>
+          <div
+            className="relative w-full h-full rounded-3xl overflow-hidden bg-cover bg-center"
+            style={{
+              backgroundImage: 'url(/hero-bg.gif)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
         </div>
       </div>
 
